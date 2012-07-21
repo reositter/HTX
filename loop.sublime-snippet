@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+<z:loop alias="${1:lo}" start="${2:0}" until="${3:10}">
+	$0 \$z:index[${1}]
+</z:loop>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>loop</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

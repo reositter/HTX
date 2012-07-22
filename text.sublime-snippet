@@ -2,9 +2,7 @@
 	<content><![CDATA[
 <z:if \$z:text[${1}] ne "" and \$z:text[$1] ne "?${1}?">
 	\$z:text[$1]$0
-</z:if>
-
-	]]></content>
+</z:if>]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>text</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->

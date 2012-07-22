@@ -82,7 +82,7 @@ class TagCompletions(sublime_plugin.EventListener):
                         ("$z:config\tTag", "\$z:config[${1}]"),
                         ("$z:error\tTag", "\$z:error[$1]"),
                         ("$z:errorof\tTag", "\$z:errorof[$1]")
-                        ], sublime.INHIBIT_WORD_COMPLETIONS | sublime.INHIBIT_EXPLICIT_COMPLETIONS)
+                        ].sort(), sublime.INHIBIT_WORD_COMPLETIONS | sublime.INHIBIT_EXPLICIT_COMPLETIONS)
 
         return ([
 
@@ -300,4 +300,4 @@ class TagCompletions(sublime_plugin.EventListener):
                 ("NAV\tTag", "NAV>$1</NAV>"),
                 ("SECTION\tTag", "SECTION>$1</SECTION>"),
                 ("VIDEO\tTag", "VIDEO>$1</VIDEO>")
-            ], sublime.INHIBIT_WORD_COMPLETIONS | sublime.INHIBIT_EXPLICIT_COMPLETIONS)
+            ].sort(), sublime.INHIBIT_WORD_COMPLETIONS | sublime.INHIBIT_EXPLICIT_COMPLETIONS)

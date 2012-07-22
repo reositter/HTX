@@ -32,13 +32,27 @@
 
 <p>You'll find Sublime Text 2 over at <a href="http://www.sublimetext.com/2">http://www.sublimetext.com/2</a>.</p>
 
-<p>This package adds support for the HTX syntax found in Visma Zpider.</p>
+<p>This package adds support for the HTX syntax found in Visma Zpider. It'll give you autocomplete and syntax highlighting in Sublime Text 2 for HTX files.</p>
 
 <h3>Installation</h3>
 
 <p>Either download with git or download the zip and place it in the Data\Packages folder</p>
 
 <p><code>git clone https://github.com/omelhus/HTX.git HTX</code></p>
+
+<p>When you've installed the package, you'll have to make some changes to your settings. Go to Preferences/Settings - User and add these:
+</p>
+<p><code>{
+  "auto_complete_triggers":
+	[
+		{
+			"characters": "$<",
+			"selector": "text.html"
+		}
+	],
+	"word_separators": "./\\()\"'-,.;<>~!@#%^&*|+=[]{}`~?"
+}
+</code></p>
       </section>
     </div>
 

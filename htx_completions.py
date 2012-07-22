@@ -105,6 +105,7 @@ class TagCompletions(sublime_plugin.EventListener):
                 ("z:if\tTag", "z:if $1>$0</z:if>"),
                 ("z:elseif\tTag", "z:elseif $1>$0"),
                 ("z:else\tTag", "z:else>"),
+                ("z:meta\tTag", "z:meta name=\"$1\">$0</z:meta>"),
                 ("z:unsubst\tTag", "z:unsubst alias=\"${1}\">"),
                 ("z:text\tTag", "z:text path=\$z:value[support.erpfilepath] dir=\"${1:Memo}\" name=${2:\"$3\"} location=\"config\">"),
                 ("z:document\tTag", "z:document name=\"${1}\" location=\"config\" download=\"${2:yes}\" title=\"${3}\">${3}</z:document>"),

@@ -20,8 +20,6 @@
 		|^&lt;!--\ end\ tminclude\ --&gt;$
 		|^[^{]*\}
 		)</string>
-	<key>keyEquivalent</key>
-	<string>^~H</string>
 	<key>name</key>
 	<string>HTX</string>
 	<key>patterns</key>

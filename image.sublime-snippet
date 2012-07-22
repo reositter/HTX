@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+<z:set scope="request" name="tmpImg"><z:img path=\$z:value[support.erpfilepath] name=$1 dir="${2:Images}" returnsrc="true" location="config"></z:set>
+<z:if \$z:get[request.tmpImg] ne "">
+	$0\$z:get[request.tmpImg]
+</z:if>
+<z:unset scope="request" name="tmpImg">
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>image</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

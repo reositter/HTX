@@ -76,7 +76,7 @@ class TagCompletions(sublime_plugin.EventListener):
                         ("$z:valueof\tTag", "\$z:valueof[$1]"),
                         ("$z:text\tTag", "\$z:text[$1]"),
                         ("$z:styletext\tTag", "\$z:styletext[$1]"),
-                        ("$z:interation\tTag", "\$z:iteration[${1:dataclass}.{$2:count}]"),
+                        ("$z:interation\tTag", "\$z:iteration[${1:dataclass}.${2:count}]"),
                         ("$z:index\tTag", "\$z:index[${1:lo}]"),
                         ("$z:exist\tTag", "\$z:exist[${1}]"),
                         ("$z:config\tTag", "\$z:config[${1}]"),

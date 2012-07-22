@@ -1,11 +1,12 @@
 <snippet>
 	<content><![CDATA[
-<z:prepare alias="$1" dataclass="$1" scope="${2:request}" filter="${3}" sortorder="${4}" sortdirection="${5}" maxrows="${5:200}" startrecord="${7:0}">
-	${0}
-<z:unprepare alias="${1}">
+<z:if \$z:text[${1}] ne "" and \$z:text[$1] ne "?${1}?">
+	\$z:text[$1]$0
+</z:if>
+
 	]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>prepare</tabTrigger>
+	<tabTrigger>text</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>

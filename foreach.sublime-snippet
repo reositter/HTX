@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<z:foreach alias="${1}" scope="${2:request}">
+<z:foreach alias="$1" scope="${2:request}" maxrows="${3:20}" maxpages="${4:1}" pagesize="${5:20}" startpage="${6:0}" startoffset="${7:0}">
 	${0}
 </z:foreach>
 ]]></content>

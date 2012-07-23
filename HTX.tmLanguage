@@ -511,15 +511,11 @@
 			<key>name</key>
 			<string>meta.tag.other.html</string>
 			<key>patterns</key>
-			<array>
-				<dict>
-				       	<key>include</key>
-				       	<string>#match</string>
-				</dict>				
-				<dict>
-				       	<key>include</key>
-				       	<string>#tag-stuff</string>
-				</dict>				
+			<array>			
+			       	<dict>
+			       	       	<key>include</key>
+			       	       	<string>#tag-stuff</string>
+			       	</dict>				
 			</array>
 		</dict>
 		<dict>
@@ -816,10 +812,6 @@
 					<array>
 						<dict>
 							<key>include</key>
-							<string>#embedded-code</string>
-						</dict>
-						<dict>
-							<key>include</key>
 							<string>#entities</string>
 						</dict>
 					</array>
@@ -887,15 +879,11 @@
 			<key>name</key>
 			<string>meta.tag.other.html</string>
 			<key>patterns</key>
-			<array>
-				<dict>
-				       	<key>include</key>
-				       	<string>#match</string>
-				</dict>				
-				<dict>
-				       	<key>include</key>
-				       	<string>#tag-stuff</string>
-				</dict>				
+			<array>			
+			       	<dict>
+			       	       	<key>include</key>
+			       	       	<string>#tag-stuff</string>
+			       	</dict>				
 			</array>
 		</dict>
 	</dict>

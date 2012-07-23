@@ -359,6 +359,10 @@
 						</dict>
 						<dict>
 							<key>include</key>
+						    <string>#tag-zpider-dollar</string>
+						</dict>							
+						<dict>
+							<key>include</key>
 							<string>source.js</string>
 						</dict>
 					</array>
@@ -509,12 +513,12 @@
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>include</key>
-					<string>#match</string>
+				       	<key>include</key>
+				       	<string>#match</string>
 				</dict>				
 				<dict>
-					<key>include</key>
-					<string>#tag-stuff</string>
+				       	<key>include</key>
+				       	<string>#tag-stuff</string>
 				</dict>				
 			</array>
 		</dict>
@@ -885,12 +889,12 @@
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>include</key>
-					<string>#match</string>
+				       	<key>include</key>
+				       	<string>#match</string>
 				</dict>				
 				<dict>
-					<key>include</key>
-					<string>#tag-stuff</string>
+				       	<key>include</key>
+				       	<string>#tag-stuff</string>
 				</dict>				
 			</array>
 		</dict>

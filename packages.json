@@ -1,0 +1,20 @@
+{
+	"schema_version": "1.2",
+	"packages": [
+		{
+			"name": "HTX (Visma Zpider)",
+			"description": "Support for the HTX syntax",
+			"author": "omelhus",
+			"homepage": "https://omelhus.github.com/HTX/",
+			"last_modified": "2012-07-22 12:04:31",
+			"platforms": {
+				"*": [
+					{
+						"version": "1.0.0",
+						"url": "https://github.com/omelhus/HTX/zipball/master"
+					}
+				]
+			}
+		}
+	]
+}

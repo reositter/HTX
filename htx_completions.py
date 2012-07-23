@@ -82,7 +82,7 @@ class TagCompletions(sublime_plugin.EventListener):
                         ("$z:config\tTag", "\$z:config[${1}]"),
                         ("$z:error\tTag", "\$z:error[$1]"),
                         ("$z:errorof\tTag", "\$z:errorof[$1]")
-                        ].sort(), sublime.INHIBIT_WORD_COMPLETIONS | sublime.INHIBIT_EXPLICIT_COMPLETIONS)
+                        ], sublime.INHIBIT_WORD_COMPLETIONS | sublime.INHIBIT_EXPLICIT_COMPLETIONS)
 
         return ([
 
@@ -96,7 +96,7 @@ class TagCompletions(sublime_plugin.EventListener):
                 ("z:include control\tTag", "z:include control=\"$1\">"),
                 ("z:prepare\tTag", "z:prepare alias=\"$1\" dataclass=\"$1\" scope=\"${2:request}\" filter=\"${3}\" sortorder=\"${4}\" sortdirection=\"${5}\" maxrows=\"${5:200}\" startrecord=\"${7:0}\">"),
                 ("z:unprepare\tTag", "z:unprepare alias=\"$1\" scope=\"${2:request}\">"),
-                ("z:refresh\tTag", "z:refresh alias=\"$1\" dataclass=\"$1\" scope=\"${2:request}\" filter=\"${3}\" sortorder=\"${4}\" sortdirection=\"${5}\" maxrows=\"${5:200}\" startrecord=\"${7:0}\">"),
+                ("z:refresh\tTag", "z:refresh alias=\"$1\" dataclass=\"$1\" scope=\"${2:request}\" filter=\"${3}\" sortorder=\"${4}\" sortdirection=\"${5}\" maxrows=\"${6:200}\" startrecord=\"${7:0}\">"),
                 ("z:foreach\tTag", "z:foreach alias=\"$1\" scope=\"${2:request}\" maxrows=\"${3:20}\" maxpages=\"${4:1}\" pagesize=\"${5:20}\" startpage=\"${6:0}\" startoffset=\"${7:0}\">\n</z:foreach>"),
                 ("z:webattributes\tTag", "z:webattributes alias=\"$1\" module=\"$2\">\n$0\n</z:webattributes>"),
                 ("z:loop\tTag", "z:loop alias=\"${1:lo}\" start=\"${2:0}\" until=\"${3:10}\" step=\"${4:1}\">\n$0\$z:index[$1]\n</z:loop>"),
@@ -106,6 +106,7 @@ class TagCompletions(sublime_plugin.EventListener):
                 ("z:elseif\tTag", "z:elseif $1>$0"),
                 ("z:else\tTag", "z:else>"),
                 ("z:meta\tTag", "z:meta name=\"$1\">$0</z:meta>"),
+                ("z:insert\tTag", "z:insert file=\"$1\">"),
                 ("z:unsubst\tTag", "z:unsubst alias=\"${1}\">"),
                 ("z:text\tTag", "z:text path=\$z:value[support.erpfilepath] dir=\"${1:Memo}\" name=${2:\"$3\"} location=\"config\">"),
                 ("z:document\tTag", "z:document name=\"${1}\" location=\"config\" download=\"${2:yes}\" title=\"${3}\">${3}</z:document>"),
@@ -300,4 +301,4 @@ class TagCompletions(sublime_plugin.EventListener):
                 ("NAV\tTag", "NAV>$1</NAV>"),
                 ("SECTION\tTag", "SECTION>$1</SECTION>"),
                 ("VIDEO\tTag", "VIDEO>$1</VIDEO>")
-            ].sort(), sublime.INHIBIT_WORD_COMPLETIONS | sublime.INHIBIT_EXPLICIT_COMPLETIONS)
+            ], sublime.INHIBIT_WORD_COMPLETIONS | sublime.INHIBIT_EXPLICIT_COMPLETIONS)

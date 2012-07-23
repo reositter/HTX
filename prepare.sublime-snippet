@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<z:prepare alias="$1" dataclass="$1" scope="${2:request}" filter="${3}" sortorder="${4}" sortdirection="${5}" maxrows="${5:200}" startrecord="${7:0}">
+<z:prepare alias="$1" dataclass="$1" scope="${2:request}" filter="${3}" sortorder="${4}" sortdirection="${5}" maxrows="${6:200}" startrecord="${7:0}">
 	${0}
 <z:unprepare alias="${1}">
 	]]></content>

@@ -97,7 +97,7 @@ class TagCompletions(sublime_plugin.EventListener):
                 ("z:prepare\tTag", "z:prepare alias=\"$1\" dataclass=\"$1\" scope=\"${2:request}\" filter=\"${3}\" sortorder=\"${4}\" sortdirection=\"${5}\" maxrows=\"${5:200}\" startrecord=\"${7:0}\">"),
                 ("z:unprepare\tTag", "z:unprepare alias=\"$1\" scope=\"${2:request}\">"),
                 ("z:refresh\tTag", "z:refresh alias=\"$1\" dataclass=\"$1\" scope=\"${2:request}\" filter=\"${3}\" sortorder=\"${4}\" sortdirection=\"${5}\" maxrows=\"${6:200}\" startrecord=\"${7:0}\">"),
-                ("z:foreach\tTag", "z:foreach alias=\"$1\" scope=\"${2:request}\" maxrows=\"${3:20}\" maxpages=\"${4:1}\" pagesize=\"${5:20}\" startpage=\"${6:0}\" startoffset=\"${7:0}\">\n</z:foreach>"),
+                ("z:foreach\tTag", "z:foreach alias=\"$1\" scope=\"${2:request}\" maxrows=\"${3:20}\" maxpages=\"${4:1}\" pagesize=\"${5:20}\" startpage=\"${6:0}\" startoffset=\"${7:0}\">\n$0\n</z:foreach>"),
                 ("z:webattributes\tTag", "z:webattributes alias=\"$1\" module=\"$2\">\n$0\n</z:webattributes>"),
                 ("z:loop\tTag", "z:loop alias=\"${1:lo}\" start=\"${2:0}\" until=\"${3:10}\" step=\"${4:1}\">\n$0\$z:index[$1]\n</z:loop>"),
                 ("z:redirect\tTag", "z:redirect ${1:${2:url}=\"${3}\"}>"),

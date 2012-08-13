@@ -1,0 +1,11 @@
+[
+    {
+		"caption": "Visma Zpider",
+        "id": "zpider",
+        "mnemonic": "Z",
+        "children":
+        [
+			{ "command": "restart_zpider", "caption": "Restart Fusion", "mnemonic": "R" }
+		]
+	}
+]

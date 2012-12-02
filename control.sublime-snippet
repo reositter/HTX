@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<z:include control="~/${1:Controls}/${2}${3:.ascx}">
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>control</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<z:include control="~/Controls/Picture.ascx" Src=${1:"$2"} Width="$3">
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>picture</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+</snippet>

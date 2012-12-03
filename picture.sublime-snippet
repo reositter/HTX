@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<z:include control="~/Controls/Picture.ascx" Src=${1:"$2"} Width="$3">
+<z:include control="~/Controls/Picture.ascx" Picture=${1:"$2"} Width="$3">
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>picture</tabTrigger>

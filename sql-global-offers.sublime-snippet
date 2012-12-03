@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+SELECT ArticleNo from Article A WHERE
+GETDATE() BETWEEN A.StartDateOfferPrice AND A.StopDateOfferPrice AND A.OfferPrice > 0
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>sql-global-offers</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+</snippet>

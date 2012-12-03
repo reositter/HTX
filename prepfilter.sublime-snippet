@@ -4,7 +4,7 @@
 <z:if $z:value[support.clienttype] eq "0"> ## Visma Business
 	<z:set scope="request" name="filter">Prod.ProdNo IN (\$z:get[request.clause])</z:set>
 <z:elseif $z:value[support.clienttype] eq "2"> ## Visma Global
-	<z:set scope="request" name="filter">ART.Number IN (\$z:get[request.clause])</z:set>
+	<z:set scope="request" name="filter">ART.ArticleNo IN (\$z:get[request.clause])</z:set>
 </z:if>
 <z:prepare alias="$2" dataclass="$2" scope="${3:request}" filter=\$z:get[request.filter]  sortorder="${4}" maxrows="${6:200}" startrecord="${7:0}">
 	${0}

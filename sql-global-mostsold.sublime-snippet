@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+SELECT TOP ${1:8} COLC.ArticleNo from CustomerOrderLineCopy COLC
+INNER JOIN Article IART on IART.ArticleNo = COLC.ArticleNo AND IART.Price1 > ${2:500} AND IART.ShowOnWebYesNo = 1
+WHERE COLC.OrderDate > DATEADD(MONTH, -2, GETDATE())
+GROUP BY COLC.ArticleNo
+HAVING SUM(Quantity) > 1 AND COUNT(COLC.ArticleNo) > 1
+ORDER BY SUM(Quantity) DESC
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>sql-global-mostsold</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+</snippet>

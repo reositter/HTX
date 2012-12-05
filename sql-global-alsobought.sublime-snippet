@@ -3,7 +3,7 @@
 SELECT TOP 8 COLC2.ArticleNo from CustomerOrderLinecopy COLC
 LEFT OUTER JOIN CustomerOrderLinecopy COLC2 ON COLC.OrderCopyNo = Colc2.OrderCopyNo AND COLC.ArticleNo != COLC2.ArticleNo
 INNER JOIN Article ART ON ART.ArticleNo = COLC2.ArticleNo AND ART.ShowOnWebYesNo = 1
-WHERE COLC.OrderDate > DATEADD(YEAR, -2, GETDATE()) AND COLC.ArticleNo = '$z:value[article.number]'
+WHERE COLC.OrderDate > DATEADD(YEAR, -2, GETDATE()) AND COLC.ArticleNo = '\$z:value[article.number]'
 GROUP BY COLC2.ArticleNo, COLC2.Name
 HAVING COUNT(COlC2.ArticleNo) > 1
 ORDER BY COUNT(COlC2.ArticleNo) desc

@@ -1,19 +1,19 @@
 <snippet>
     <content><![CDATA[
-    <Module Name="$1" IsTemplate="false">
-       <Props />
-       <ModuleImplementations>
-          <ModuleImplementation Type="HTX" FileName="${2:$1.htx}" />
-       </ModuleImplementations>
-       <StyleSheets />
-       <Menus />
-       <WebAttributes>
-        <WebAttribute Name="$3" KeyAttribute="$4.$3" WebAttributeType="TEXT" FormatType="General" />
-       </WebAttributes>
-       <Texts />
-       <Images />
-       <IncludeModules />
-    </Module>]]></content>
+<Module Name="$1" IsTemplate="false">
+   <Props />
+   <ModuleImplementations>
+      <ModuleImplementation Type="HTX" FileName="${2:$1.htx}" />
+   </ModuleImplementations>
+   <StyleSheets />
+   <Menus />
+   <WebAttributes>
+    <WebAttribute Name="$3" KeyAttribute="$4.$3" WebAttributeType="TEXT" FormatType="General" />
+   </WebAttributes>
+   <Texts />
+   <Images />
+   <IncludeModules />
+</Module>]]></content>
     <tabTrigger>module</tabTrigger>
     <scope>text.xml</scope>
     <description>ZpiderModule</description>

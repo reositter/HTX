@@ -5,7 +5,7 @@ LEFT OUTER JOIN CustomerOrderLinecopy COLC2 ON COLC.OrderCopyNo = Colc2.OrderCop
 INNER JOIN Article ART ON ART.ArticleNo = COLC2.ArticleNo AND ART.ShowOnWebYesNo = 1
 WHERE COLC.OrderDate > DATEADD(YEAR, -2, GETDATE()) AND COLC.ArticleNo = '\$z:value[article.number]'
 GROUP BY COLC2.ArticleNo, COLC2.Name
-HAVING COUNT(COlC2.ArticleNo) > 1
+HAVING COUNT(COlC2.ArticleNo) > 1 ## Treshold for showing. Must be bought together at least once.
 ORDER BY COUNT(COlC2.ArticleNo) desc
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

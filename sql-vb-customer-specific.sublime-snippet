@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+SELECT TOP 32 OrdLn.ProdNo FROM OrdLn 
+INNER JOIN Prod ON Prod.ProdNo = OrdRL.ProdNo AND Prod.ProdPro = 1
+INNER JOIN Ord ON Ord.OrdNo = OrdLn.OrdNo AND Ord.CustNo = '\$z:value[webuser.customerno]'
+GROUP BY OrdLn.ProdNo
+ORDER BY COUNT(OrdLn.ProdNo) DESC 
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>sql-vb-customer-specific</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+</snippet>

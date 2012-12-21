@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+SELECT  TOP ${1:10}  DISC.ArticleNo
+FROM         DiscountAgreementCustomer DISC
+INNER JOIN article ART ON ART.ArticleNo = DISC.ArticleNo AND ART.ShowOnWebYesNo = 1 AND (StartDate <= DATEADD(DAY, 1, GETDATE())) AND (StopDate >= GETDATE())
+WHERE     (CustomerNo = '\$z:value[webuser.customerno]')
+ORDER BY NEWID()
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>sql-global-offers-customerspecific</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+</snippet>
